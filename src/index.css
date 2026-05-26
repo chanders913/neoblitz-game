@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-tertiary: #0a0f1d;
+  --color-on-primary: #030712;
+  --color-inverse-on-surface: #0f172a;
+  --color-tertiary: #c084fc;
+  --color-surface-container-low: #090d16;
+  --color-outline-variant: #1e293b;
+  --color-on-surface-variant: #94a3b8;
+  --color-background: #05070A;
+  --color-primary-fixed: #60a5fa;
+  --color-on-tertiary-container: #3b82f6;
+  --color-surface-variant: #0b0f19;
+  --color-surface-container-lowest: #020306;
+  --color-on-secondary-fixed: #1e1b4b;
+  --color-inverse-primary: #1d4ed8;
+  --color-surface-dim: #05070A;
+  --color-surface-container-highest: #1a2333;
+  --color-secondary-fixed: #e9d5ff;
+  --color-outline: #64748b;
+  --color-error: #fca5a5;
+  --color-on-tertiary-fixed: #0f172a;
+  --color-on-tertiary-fixed-variant: #1e293b;
+  --color-on-surface: #f1f5f9;
+  --color-surface-container: #0b0f19;
+  --color-primary-container: #3b82f6;
+  --color-surface-bright: #141c2f;
+  --color-on-background: #f1f5f9;
+  --color-surface-tint: #60a5fa;
+  --color-surface: #05070A;
+  --color-inverse-surface: #f8fafc;
+  --color-tertiary-fixed-dim: #d8b4fe;
+  --color-primary: #3b82f6;
+  --color-tertiary-fixed: #a78bfa;
+  --color-on-secondary-container: #2e1065;
+  --color-secondary-fixed-dim: #ebd5ff;
+  --color-tertiary-container: #c084fc;
+  --color-on-secondary: #4c1d95;
+  --color-on-error-container: #fee2e2;
+  --color-on-primary-fixed-variant: #111827;
+  --color-on-primary-fixed: #030712;
+  --color-on-primary-container: #1e3a8a;
+  --color-primary-fixed-dim: #60a5fa;
+  --color-on-error: #5c000c;
+  --color-secondary: #ebd5ff;
+  --color-error-container: #991b1b;
+  --color-surface-container-high: #0f1525;
+  --color-on-secondary-fixed-variant: #431407;
+  --color-secondary-container: #8b5cf6;
+
+  --font-sans: "Hanken Grotesk", system-ui, sans-serif;
+  --font-title-md: "Hanken Grotesk", system-ui, sans-serif;
+  --font-body-lg: "Hanken Grotesk", system-ui, sans-serif;
+  --font-body-md: "Hanken Grotesk", system-ui, sans-serif;
+  --font-label-caps: "JetBrains Mono", monospace;
+  --font-headline-lg-mobile: "Anybody", system-ui, sans-serif;
+  --font-headline-lg: "Anybody", system-ui, sans-serif;
+  --font-headline-xl: "Anybody", system-ui, sans-serif;
+  --font-display-lg: "Anybody", system-ui, sans-serif;
+  --font-code-sm: "JetBrains Mono", monospace;
+}
+
+/* Custom CSS classes matching Neoblitz visual designs */
+.clip-slant {
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.clip-slant-reverse {
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+}
+
+.glass-panel {
+  background: rgba(5, 7, 10, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background-color: rgba(5, 7, 10, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 2px solid #3b82f6;
+  border-right: 1px solid rgba(59, 130, 246, 0.12);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.12);
+  border-left: 1px solid rgba(59, 130, 246, 0.12);
+}
+
+.glass-card-gold {
+  border-top: 2px solid #eab308;
+  border-right: 1px solid rgba(234, 179, 8, 0.12);
+  border-bottom: 1px solid rgba(234, 179, 8, 0.12);
+  border-left: 1px solid rgba(234, 179, 8, 0.12);
+  box-shadow: 0 0 30px rgba(234, 179, 8, 0.18);
+}
+
+.glass-card-silver {
+  border-top: 2px solid #94a3b8;
+  border-right: 1px solid rgba(148, 163, 184, 0.12);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+  border-left: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.glass-card-bronze {
+  border-top: 2px solid #b45309;
+  border-right: 1px solid rgba(180, 83, 9, 0.12);
+  border-bottom: 1px solid rgba(180, 83, 9, 0.12);
+  border-left: 1px solid rgba(180, 83, 9, 0.12);
+}
+
+.cyber-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.neon-border-primary {
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  box-shadow: inset 0 0 10px rgba(59, 130, 246, 0.08), 0 0 20px rgba(59, 130, 246, 0.18);
+}
+
+.neon-border-secondary {
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  box-shadow: inset 0 0 10px rgba(139, 92, 246, 0.08), 0 0 20px rgba(139, 92, 246, 0.18);
+}
+
+.neon-bloom-primary {
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.25);
+}
+
+.neon-bloom-primary-intense {
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.45), inset 0 0 10px rgba(59, 130, 246, 0.25);
+}
+
+.neon-bloom-secondary {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+}
+
+.cyber-border-top {
+  border-top: 2px solid #60a5fa;
+}
+
+.active-ring {
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.6); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+
+/* Animations declared in standard CSS for performance */
+@keyframes cyber-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 10px rgba(139, 92, 246, 0.4); }
+  50% { opacity: 0.7; box-shadow: 0 0 25px rgba(139, 92, 246, 0.7); }
+}
+
+.progress-pulse {
+  animation: cyber-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-pulse-fast {
+  animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-spin-slow {
+  animation: spin 8s linear infinite;
+}
+
+.ambient-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+  background: 
+    radial-gradient(circle at 10% 10%, rgba(59, 130, 246, 0.15) 0%, transparent 45%),
+    radial-gradient(circle at 90% 90%, rgba(139, 92, 246, 0.08) 0%, transparent 55%),
+    radial-gradient(circle at 50% 50%, rgba(5, 7, 10, 1) 0%, #05070a 100%);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.35);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.65);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "NEOBLITZ",
+  "description": "A cyber-dynamic companion hub, armory customizer, battle-pass vault, social feed, and interactive combat arena simulator for Neoblitz.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
